@@ -1,0 +1,88 @@
+set. 29, 2024 7:28:56 PM org.example.BancoServidor main
+INFORMAÇÕES: Servidor iniciado na porta 12345
+set. 29, 2024 7:29:25 PM org.example.BancoServidor main
+INFORMAÇÕES: Novo cliente conectado: /127.0.0.1
+set. 29, 2024 7:29:41 PM org.example.BancoServidor$ClienteHandler run
+INFORMAÇÕES: Operação recebida: DEPOSITAR do cliente /127.0.0.1
+set. 29, 2024 7:29:41 PM org.example.BancoServidor$ClienteHandler run
+INFORMAÇÕES: Depósito de R$300.0 realizado.
+set. 29, 2024 7:29:47 PM org.example.BancoServidor$ClienteHandler run
+INFORMAÇÕES: Operação recebida: SALDO do cliente /127.0.0.1
+set. 29, 2024 7:29:47 PM org.example.BancoServidor$ClienteHandler run
+INFORMAÇÕES: Consulta de saldo: R$300.0
+set. 29, 2024 7:29:53 PM org.example.BancoServidor$ClienteHandler run
+INFORMAÇÕES: Operação recebida: SACAR do cliente /127.0.0.1
+set. 29, 2024 7:29:53 PM org.example.BancoServidor$ClienteHandler run
+INFORMAÇÕES: Saque de R$100.0 realizado.
+set. 29, 2024 7:43:57 PM org.example.BancoServidor carregarContas
+ADVERTÊNCIA: Nenhum arquivo de contas encontrado. Criando novo arquivo.
+set. 29, 2024 7:43:57 PM org.example.BancoServidor main
+INFORMAÇÕES: Servidor iniciado na porta 12345
+set. 29, 2024 7:44:08 PM org.example.BancoServidor main
+INFORMAÇÕES: Novo cliente conectado: /127.0.0.1
+set. 29, 2024 7:44:14 PM org.example.BancoServidor$ClienteHandler processarOperacao
+INFORMAÇÕES: Operação recebida: qerwerw do cliente /127.0.0.1
+set. 29, 2024 7:44:24 PM org.example.BancoServidor$ClienteHandler processarOperacao
+INFORMAÇÕES: Operação recebida: DEPOSITAR do cliente /127.0.0.1
+set. 29, 2024 7:44:42 PM org.example.BancoServidor$ClienteHandler processarOperacao
+INFORMAÇÕES: Operação recebida: DEPOSITAR do cliente /127.0.0.1
+set. 29, 2024 7:44:42 PM org.example.BancoServidor$ClienteHandler processarOperacao
+INFORMAÇÕES: Depósito de R$150.0 realizado na conta 1
+set. 29, 2024 7:45:15 PM org.example.BancoServidor$ClienteHandler processarOperacao
+INFORMAÇÕES: Operação recebida: DEPOSITAR do cliente /127.0.0.1
+set. 29, 2024 7:45:34 PM org.example.BancoServidor$ClienteHandler processarOperacao
+INFORMAÇÕES: Operação recebida: DEPOSITAR do cliente /127.0.0.1
+set. 29, 2024 7:45:34 PM org.example.BancoServidor$ClienteHandler processarOperacao
+INFORMAÇÕES: Depósito de R$6000.0 realizado na conta 2
+set. 29, 2024 7:45:40 PM org.example.BancoServidor$ClienteHandler processarOperacao
+INFORMAÇÕES: Operação recebida: SALDO do cliente /127.0.0.1
+set. 29, 2024 7:45:45 PM org.example.BancoServidor$ClienteHandler processarOperacao
+INFORMAÇÕES: Operação recebida: SALDO do cliente /127.0.0.1
+set. 29, 2024 7:45:45 PM org.example.BancoServidor$ClienteHandler processarOperacao
+INFORMAÇÕES: Consulta de saldo da conta 1: R$150.0
+set. 29, 2024 7:45:52 PM org.example.BancoServidor$ClienteHandler processarOperacao
+INFORMAÇÕES: Operação recebida: SALDO do cliente /127.0.0.1
+set. 29, 2024 7:45:52 PM org.example.BancoServidor$ClienteHandler processarOperacao
+INFORMAÇÕES: Consulta de saldo da conta 2: R$6000.0
+set. 29, 2024 7:46:11 PM org.example.BancoServidor$ClienteHandler processarOperacao
+INFORMAÇÕES: Operação recebida: SACAR do cliente /127.0.0.1
+set. 29, 2024 7:46:11 PM org.example.BancoServidor$ClienteHandler processarOperacao
+ADVERTÊNCIA: Tentativa de saque falhou. Saldo insuficiente.
+set. 29, 2024 7:46:23 PM org.example.BancoServidor$ClienteHandler processarOperacao
+INFORMAÇÕES: Operação recebida: SACAR do cliente /127.0.0.1
+set. 29, 2024 7:46:23 PM org.example.BancoServidor$ClienteHandler processarOperacao
+INFORMAÇÕES: Saque de R$600.0 realizado na conta 2
+set. 29, 2024 7:46:31 PM org.example.BancoServidor$ClienteHandler processarOperacao
+INFORMAÇÕES: Operação recebida: SALDO do cliente /127.0.0.1
+set. 29, 2024 7:46:31 PM org.example.BancoServidor$ClienteHandler processarOperacao
+INFORMAÇÕES: Consulta de saldo da conta 2: R$5400.0
+set. 29, 2024 7:46:43 PM org.example.BancoServidor$ClienteHandler processarOperacao
+INFORMAÇÕES: Operação recebida: SALDO do cliente /127.0.0.1
+set. 29, 2024 7:46:43 PM org.example.BancoServidor$ClienteHandler processarOperacao
+INFORMAÇÕES: Consulta de saldo da conta 1: R$150.0
+set. 29, 2024 7:46:59 PM org.example.BancoServidor$ClienteHandler processarOperacao
+INFORMAÇÕES: Operação recebida: SAIR do cliente /127.0.0.1
+set. 29, 2024 7:46:59 PM org.example.BancoServidor$ClienteHandler processarOperacao
+INFORMAÇÕES: Cliente desconectado: /127.0.0.1
+set. 29, 2024 7:46:59 PM org.example.BancoServidor$ClienteHandler run
+GRAVE: Erro de comunicação com o cliente: /127.0.0.1
+java.net.SocketException: Socket closed
+	at java.base/sun.nio.ch.NioSocketImpl.ensureOpenAndConnected(NioSocketImpl.java:163)
+	at java.base/sun.nio.ch.NioSocketImpl.beginRead(NioSocketImpl.java:226)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:294)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796)
+	at java.base/java.net.Socket$SocketInputStream.implRead(Socket.java:1108)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1095)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:350)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:393)
+	at java.base/sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:217)
+	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:171)
+	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:186)
+	at java.base/java.io.BufferedReader.fill(BufferedReader.java:160)
+	at java.base/java.io.BufferedReader.implReadLine(BufferedReader.java:370)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:347)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:436)
+	at org.example.BancoServidor$ClienteHandler.run(BancoServidor.java:90)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+
